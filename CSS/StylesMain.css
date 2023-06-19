@@ -1,0 +1,174 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: "arial", "helvetica", sans-serif;
+	background-color: black;
+	color: white;
+	font-size: 25px;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	/*width: 100%;*/
+	background-color: white;
+	color: black;
+	/*padding: 10px;*/
+}
+
+header img {
+	display: inline;
+	width: 50px;
+	vertical-align: bottom;
+	margin: 5px;
+}
+
+.uni-logo {
+	float: right;
+	width: 150px;
+}
+
+header h1 {
+	font-size: 30px;
+	margin: 5px;
+}
+
+h1.long {
+	display: none;
+}
+
+h1.short {
+	display: inline-block;
+}
+
+nav {
+	background-color: black;
+	padding-bottom: 5px;
+	border-bottom: 3px solid white;
+}
+
+nav * {
+	padding: 10px;
+	height: 100%;
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+
+nav a {
+	display: none;
+}
+
+#Hamburger {
+	padding: 0;
+}
+
+#Hamburger.active {
+	border-bottom: 3px solid white;
+}
+
+#Hamburger.active ~ a {
+	display: block;
+}
+
+#Hamburger .close {
+	display: none;
+}
+
+#Hamburger.active .open {
+	display: none;
+}
+
+#Hamburger.active .close {
+	display: block;
+}
+
+nav a:hover, #Hamburger:active {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+section {
+	margin-top: 10%;
+	scroll-margin-top: 110px;
+	background-color: black;
+	background-image: url(https://media0.giphy.com/media/ZvUMnLTUxbHbqP5OJf/giphy.gif?cid=ecf05e47qurt2jh21b40mpnkco30gjatgrnbzxkakjb761fc&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+	background-size: cover;
+	padding: 25px;
+	border-radius: 30px;
+}
+
+.content {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+section h2 {
+	text-align: center;
+}
+
+section.long {
+	background-size: contain;
+}
+
+.profile {
+	margin-top: 20px;
+}
+
+.profile img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50px;
+}
+
+.profile .name {
+	font-weight: bold;
+}
+
+.profile .designation {
+	font-style: italic;
+}
+
+footer {
+	position: relative;
+	padding: 10px;
+}
+
+.address {
+	display: inline-block;
+}
+
+.github {
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.github img {
+	width: 50px;
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		background-color: rgb(50, 50, 50);
+		background-image: url(https://i.giphy.com/media/U3qYN8S0j3bpK/giphy.webp);
+	}
+	h1.long {
+		display: inline-block;
+	}
+	h1.short {
+		display: none;
+	}
+	#Hamburger {
+		display: none;
+	}
+	nav a {
+		display: inline-block;
+	}
+	section {
+		margin: 10%;
+		padding: 50px;
+	}
+}
