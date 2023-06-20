@@ -104,6 +104,10 @@ section {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
+p, li {
+	text-align: justify;
+}
+
 section h2 {
 	text-align: center;
 }
